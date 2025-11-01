@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Oxygen Not Included WebPage</title>
+        <style>
+            .Norsk {display: none;}
+            nav {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                background-color: aquamarine;
+                position: fixed;
+                top: 0;
+                width: 100%;
+            }
+            li a {
+                float: left;
+                display: block;
+                color: black;
+                text-align: center;
+                padding: 10px 15px;
+                text-decoration: none;
+                font-size: larger;
+                font-family: courtier;
+            }
+            li a:hover:not(.Aktiv) {
+                background-color: beige;
+                text-decoration: underline;
+            }
+            .Aktiv {
+                background-color: rgb(55, 246, 182);
+                color:#ffffff;
+            }
+            body{background-color: rgba(0, 0, 0, 0.407);}
+            .Bilder {
+                display: block;
+                text-align: center;
+            }
+
+            .Drop {float: right;}
+            .Drop_btn {
+                background-color: aquamarine;
+                color: white;
+                padding: 10px 15px;
+                font-size: larger;
+                border: none;
+            }
+            .Drop_Cont {
+                display: none;
+                position: absolute;
+                background-color: azure;
+                min-width: 25px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+            .Drop_Cont a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+            .Drop:hover .Drop_Cont {display: block;}
+
+            .Innhold {padding: 20px;padding-top: 50px;height: 1500px;}
+            @media screen and (max-width:730px) {
+                nav {position: static;}
+                li a {float: none;}
+                .NettsideBilde {display: none;}
+                .Drop {float: none;text-align: center;display: block;}
+                .Drop_Cont {min-width: 100%;}
+                .Innhold {padding-top: 5px;}
+                .OxyOvBilde {width: 100% !important;}
+                .OxyOvTxt {width: 100% !important;}
+                .OxyOvTxt p {padding-left: 0 !important;}
+                .Bilder img {width: 100% !important;}
+                .Bilder {padding-bottom: 30px;}
+            }
+        </style>
+    </head>
+    <body style="width: 100%;margin: 0;">
+        <nav>
+            <li>
+                <a href="ONI_nettside.html" style="padding: 0px 15px;"><img src="https://a.storyblok.com/f/259446/1920x1080/b21acc4aa3/oni-feature.jpg" alt="Oxygen Not Included picture" height="37px"></a>
+                <a href="ONI_nettside.html">Home</a>
+                <a href="Oppgave1.html">Task1</a>
+
+                <div class="Drop">
+                    <button class="Drop_btn"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/1200px-Flag_of_the_United_Kingdom_%283-5%29.svg.png" alt="Engelsk" width="25px"></button>
+                    <div class="Drop_Cont">
+                        <a href="ONI_nettside.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Norway.svg/250px-Flag_of_Norway.svg.png" alt="Norsk" width="25px"></a>
+                    </div>
+                </div>
+            </li>
+        </nav>
+        <div class="Innhold">
+            <div class="Overskrift">
+                <div class="Bilder">
+                    <img style="width: 800px;" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/457140/header.jpg?t=1750118450" alt="Oxygen Not Included picture" width="70%">
+                    <p>Oxygen Not Included</p>
+                </div>
+            </div>
+            <div class="OxygenOverlay" style="width: 100%;">
+                <div style="width: 55%;float: left;" class="OxyOvBilde">
+                    <img src="https://cdn.forums.klei.com/monthly_2018_01/20180130182845_1.jpg.20f96883b307e70396088525bd87efd5.jpg" width="100%">
+                </div>
+                <div style="width: 45%;float: left;" class="OxyOvTxt">
+                    <p style="padding-left: 10px;">
+                        <span class="Norsk">Ein skal prøve å lage maskiner, for til dømes å lage oxygen<br></span> You should try to make machinery, an example is a machine to make oxygen<br>
+                        <span class="Norsk">Det er utrolig viktig å lage oxygen, for i dette spelet så bruker dei oksygen, og det blir ikkje dannet automatisk oksygen<br></span>It is very important to make oxygen, because in this game the duplicant use oxygen, and oxygen is not autmatically made<br>
+                        <span class="Norsk">Ein må også produsere strøm, for å kunne bruke maskiner<br></span>You have to produce power, to use machinery<br>
+                        <span class="Norsk">Viss ein bruker ein hydrogenmaskin, electrolzcer, og gasspunper<br></span>If you use a hydrogen machine, electrolyzer and gaspump<br>
+                        <span class="Norsk">Så kan ein produsere oksygen og hydrogen med electrolyzer og hydrogenmaskinen bruker hydrogen for å lage strøm</span>Then you could make oxygen and hydrogen with a electrolyzer and the hydrogen machine use hydrogen to produce power
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
