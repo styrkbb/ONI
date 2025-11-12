@@ -62,7 +62,50 @@
             }
             .Drop:hover .Drop_Cont {display: block;}
 
-            .Innhold {padding: 20px;padding-top: 50px;height: 1500px;}
+            .Innhold {padding-top: 50px;height: 3000px;}
+            .firstInnhold {padding: 0px 20px;}
+
+            .MeetDb {
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.856);
+                padding: 0;
+                padding-top: 70px;
+                padding-bottom: 70px;
+            }
+            .MeetDbTotal {
+                padding: 0px 20px;
+            }
+            .MeetDbRg {
+                width: 60%;
+                float: left;
+            }
+            .MeetDbLf {
+                width: 40%;
+                float: left;
+            }
+            .MeetDbCont {
+                padding: 0px 10px;
+                font-size: 50px;
+                text-align: center;
+            }
+
+            .Hydrogen {
+                width: 100%;
+                padding: 70px 0px;
+            }
+            .HydrogenTotal {
+                padding: 0px 20px;
+            }
+            .HydrogenTxt {
+                width: 40%;
+                float: left;
+            }
+            .HydrogenTxtSmall {display: none;}
+            .HydrogenBilde {
+                width: 60%;
+                float: left;
+            }
+
             @media screen and (max-width:730px) {
                 nav {position: static;}
                 li a {float: none;}
@@ -75,46 +118,100 @@
                 .OxyOvTxt p {padding-left: 0 !important;}
                 .Bilder img {width: 100% !important;}
                 .Bilder {padding-bottom: 30px;}
+                .MeetDbRg {width: 100%;}
+                .MeetDbLf {width: 100%;}
+
+                .HydrogenTxt {display: none;}
+                .HydrogenTxtSmall {width: 100%;float: left; display: inline;}
+                .HydrogenBilde {width: 100%;}
             }
         </style>
     </head>
     <body style="width: 100%;margin: 0;">
         <nav>
             <li>
-                <a href="index.html" style="padding: 0px 15px;" class="NettsideBilde"><img src="https://a.storyblok.com/f/259446/1920x1080/b21acc4aa3/oni-feature.jpg" alt="Oxygen Not Included picture" height="37px"></a>
-                <a href="index.html">Hjemside</a>
+                <a href="ONI_nettside.html" style="padding: 0px 15px;" class="NettsideBilde"><img src="https://a.storyblok.com/f/259446/1920x1080/b21acc4aa3/oni-feature.jpg" alt="Oxygen Not Included picture" height="37px"></a>
+                <a href="ONI_nettside.html">Hjemside</a>
                 <a href="Oppgave1.html">Oppgave1</a>
 
                 <div class="Drop">
                     <button class="Drop_btn"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Norway.svg/250px-Flag_of_Norway.svg.png" alt="Norsk" width="25px"></button>
                     <div class="Drop_Cont">
-                        <a href="en.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/1200px-Flag_of_the_United_Kingdom_%283-5%29.svg.png" alt="Engelsk" width="25px"></a>
+                        <a href="ONI_nettside_en.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/1200px-Flag_of_the_United_Kingdom_%283-5%29.svg.png" alt="Engelsk" width="25px"></a>
                     </div>
                 </div>
             </li>
         </nav>
         <div class="Innhold">
-            <div class="Overskrift">
-                <div class="Bilder">
-                    <img style="width: 800px;" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/457140/header.jpg?t=1750118450" alt="Oxygen Not Included bilde" width="70%">
-                    <p>Oxygen Not Included</p>
+            <div class="firstInnhold">
+                <div class="Overskrift">
+                    <div class="Bilder">
+                        <img style="width: 800px;" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/457140/header.jpg?t=1750118450" alt="Oxygen Not Included bilde" width="70%">
+                        <p>Oxygen Not Included</p>
+                    </div>
+                </div>
+                <div class="OxygenOverlay" style="width: 100%;">
+                    <div style="width: 55%;float: left;" class="OxyOvBilde">
+                        <img src="https://cdn.forums.klei.com/monthly_2018_01/20180130182845_1.jpg.20f96883b307e70396088525bd87efd5.jpg" width="100%">
+                    </div>
+                    <div style="width: 45%;float: left;" class="OxyOvTxt">
+                        <p style="padding-left: 10px;">
+                            Ein skal prøve å lage maskiner, for til dømes å lage oxygen<br>
+                            Det er utrolig viktig å lage oxygen, for i dette spelet så bruker dei oksygen, og det blir ikkje dannet automatisk oksygen<br>
+                            Ein må også produsere strøm, for å kunne bruke maskiner<br>
+                            Viss ein bruker ein hydrogenmaskin, electrolzcer, og gasspumper<br>
+                            Så kan ein produsere oksygen og hydrogen med electrolyzer og hydrogenmaskinen bruker hydrogen for å lage strøm
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="OxygenOverlay" style="width: 100%;">
-                <div style="width: 55%;float: left;" class="OxyOvBilde">
-                    <img src="https://cdn.forums.klei.com/monthly_2018_01/20180130182845_1.jpg.20f96883b307e70396088525bd87efd5.jpg" width="100%">
+            <div class="MeetDb" style="width: 100%; float: left;">
+                <div class="MeetDbTotal">
+                    <div class="MeetDbRg">
+                        <div class="MeetBilde">
+                            <img src="Skjermbilde fra 2025-11-05 18-53-44.png" alt='Møt "the Duplicants" ' width="100%">
+                        </div>
+                    </div>
+                    <div class="MeetDbLf">
+                        <div class="MeetDbCont">
+                            <p style="color: rgba(255, 255, 255, 0.432);">Møt<br><span style="color: red;">"The Duplicants"</span></p>
+                        </div>
+                    </div>
                 </div>
-                <div style="width: 45%;float: left;" class="OxyOvTxt">
-                    <p style="padding-left: 10px;">
-                        Ein skal prøve å lage maskiner, for til dømes å lage oxygen<br>
-                        Det er utrolig viktig å lage oxygen, for i dette spelet så bruker dei oksygen, og det blir ikkje dannet automatisk oksygen<br>
-                        Ein må også produsere strøm, for å kunne bruke maskiner<br>
-                        Viss ein bruker ein hydrogenmaskin, electrolzcer, og gasspumper<br>
-                        Så kan ein produsere oksygen og hydrogen med electrolyzer og hydrogenmaskinen bruker hydrogen for å lage strøm
-                    </p>
+            </div>
+            <div class="Hydrogen" style="width: 100%;float: left;">
+                <div class="HydrogenTotal">
+                    <div class="HydrogenTxt">
+                        <div class="HydrogenCont">
+                            <h1>Strøm og oksygenproduksjon</h1>
+                            <p>
+                                Her kan du sjå maskinen som ved hjelp av vatn lagar, hydrogen og oksygen<br>
+                                Det er eit eiga rom der oksygen og hydrogen vert produsert, for at ikkje dette skal slippes ut<br>
+                                Dei to maskinene på siden i øverste etasje produserer hydrogen og oksygen<br>
+                                Den øverste pumpen, pumper hydrogen, medan den nede pumper oksygen<br>
+                                Oksygen vert frigjort rundt om i basen<br>
+                                Hydrogen vert sendt inn i ein maskin som brukar hydrogen for å produsere strøm
+                            </p>
+                        </div>
+                    </div>
+                    <div class="HydrogenBilde">
+                        <img src="Skjermbilde fra 2025-11-05 18-49-33.png" alt="Oksygen og strøm produksjon" width="100%">
+                    </div>
+                    <div class="HydrogenTxtSmall">
+                        <div class="HydrogenCont">
+                            <h1>Strøm og oksygenproduksjon</h1>
+                            <p>
+                                Her kan du sjå maskinen som ved hjelp av vatn lagar, hydrogen og oksygen<br>
+                                Det er eit eiga rom der oksygen og hydrogen vert produsert, for at ikkje dette skal slippes ut<br>
+                                Dei to maskinene på siden i øverste etasje produserer hydrogen og oksygen<br>
+                                Den øverste pumpen, pumper hydrogen, medan den nede pumper oksygen<br>
+                                Oksygen vert frigjort rundt om i basen<br>
+                                Hydrogen vert sendt inn i ein maskin som brukar hydrogen for å produsere strøm
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </body>
 </html>
-
